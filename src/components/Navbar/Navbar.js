@@ -1,0 +1,39 @@
+import React, { useState } from 'react'
+import styled from '@emotion/styled'
+import Burger from './Mobile/Burger'
+import Logo from './Logo'
+import MobileMenu from './Mobile/MobileMenu'
+import DesktopMenu from './Desktop/DesktopMenu'
+import logo from '../../../public/logo.svg'
+
+const StyledNav = styled.nav`
+  width: clamp(5em, 90%, 1400px);
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 780px) {
+    margin: 2em auto 0 auto;
+  }
+`
+
+
+
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false)
+  return (
+    <StyledNav>
+        {/* <Logo /> */}
+        <img {...logo}/>
+      
+      <DesktopMenu />
+      <MobileMenu open={open} setOpen={setOpen} />
+      <Burger open={open} setOpen={setOpen} />
+    </StyledNav>
+  )
+}
+
+export default Navbar
