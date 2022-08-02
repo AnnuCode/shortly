@@ -11,7 +11,7 @@ const Main = styled.div`
   display: flex;
 
   align-items: center;
-  padding: 0px 12%;
+  padding: 60px 12%;
   width: 100%;
   height: 75px;
 
