@@ -42,7 +42,7 @@ const StyledInputBox = styled.div`
   background-image: url("/Meteor.svg");
   background-repeat: no-repeat;
   background-position: top right;
-  border-radius: 0.8em;
+  border-radius: 0;
   @media screen and (min-width: 780px) {
     top: 4rem;
     padding: 4em 2em;
