@@ -4,6 +4,7 @@ import CloseMenu from "./closeMenuIcon";
 import Image from "next/image";
 import logo from "../../public/logo.svg";
 import { useState } from "react";
+import Link from 'next/link'
 
 const Main = styled.div`
   position: relative;
@@ -131,9 +132,9 @@ const Headerrr = () => {
     {showMenu && <MenuContainer>
         <div className="anotherContainer">
             <div className="lastContainer">
-                <Items><a>Features</a></Items>
-                <Items><a>Pricing</a></Items>
-                <Items><a>Resources</a></Items>
+                <Items><Link href="#">Features</Link></Items>
+                <Items><Link href="#">Pricing</Link></Items>
+                <Items><Link href="#">Resources</Link></Items>
             </div>
         </div>
         </MenuContainer>}
